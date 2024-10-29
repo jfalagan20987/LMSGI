@@ -1,0 +1,68 @@
+* {
+  background-color: #D2E4C4;
+  color: #004466;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  color: #3c3c3c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+}
+
+h2, h3 {
+  color: #9A275A;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+ul li {
+  color: #D24B88;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.fonsNegre {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: #3c3c3c;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+footer {
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+/*
+p:last-child {
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+p:nth-child(n) {
+  opacity: 0.7
+  backgorund-color: rgba(78,185,185,0.5); ---- El darrer nombre és l'opacitat
+}
+
+p 
+
+
+*/

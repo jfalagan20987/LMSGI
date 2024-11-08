@@ -1,0 +1,16 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header, footer{
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-color: #6d597a;
+  padding: 1em;
+}

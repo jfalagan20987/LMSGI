@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   accent-color: #587b7f;
+  outline: none;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
 
 #logo {
   padding-bottom: 1em;
-  height: 150px
+  height: 150px;
 }
 
 a {
@@ -62,12 +63,7 @@ form p {
   padding-bottom: 0.5em;
 }
 
-textarea {
-  outline-color: #e2c044d8;
-}
-
 input {
-  outline-color: #e2c044d8;
   text-align: left;
 }
 
@@ -76,4 +72,35 @@ input[type="submit"] {
   background-color: #e2c044d8;
   border-color: white;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 20em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #e2c044d8;
+  border: 1px solid #e2c044d8;
+}
+
+textarea::placeholder {
+  padding: 0 0.5em;
+}
+
+input:checked + label {
+  font-weight: bold;
+}
+
+main a:active {
+  color: #e2c044d8;
+}
+
+input[type="email"]:invalid {
+  background-color: red;
 }

@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -8,9 +8,48 @@
 header, footer{
   color: white;
   text-align: center;
-}
-
-header {
   background-color: #6d597a;
   padding: 1em;
+}
+
+main {
+  height: 500px;
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+aside {
+  display: table-cell;
+  background-color: #b56576;
+  width: calc(100% - 85%);
+  padding: 1em;
+  height: 100%;
+  vertical-align: top;
+  text-align: start;
+}
+
+ul li{
+  list-style: none;
+  padding: 0.5em 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  width: calc(100% - 310px);
+  padding: 1em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.card {
+  background-color: #eaac8b;
+  padding: 2em;
+  margin-bottom: 1em;
+  display: inline-block;
+  width: calc(50% - 1em);
 }

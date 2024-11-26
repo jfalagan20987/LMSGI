@@ -1,0 +1,39 @@
+:root {
+  --orange: #ff8800;
+  --dark-orange: #db7603;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  outline: none;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  height: 120px;
+}
+
+.logo {
+  height: 80px;
+  margin: 1em 0;
+}
+
+.menu ul, .menu ul li, .menu div {
+  display: inline-block;
+}
+
+.menu ul li {
+  padding: 0 1em;
+}
+
+.menu div {
+  position: absolute;
+  right: 1em;
+}

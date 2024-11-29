@@ -12,6 +12,7 @@ header, footer{
   padding: 1em;
 }
 
+<<<<<<< HEAD
 main {
   height: 500px;
   display: table;
@@ -27,6 +28,18 @@ aside {
   height: 100%;
   vertical-align: top;
   text-align: start;
+=======
+aside, section{
+  display: inline-table;
+}
+
+aside {
+  background-color: #b56576;
+  width: calc(100% - 85%);
+  padding: 1em;
+  height: 450px;
+  vertical-align: top;
+>>>>>>> 55a6716eb0a192d088c01ecc5a8fc01b6be4146c
 }
 
 ul li{
@@ -41,15 +54,31 @@ a {
 
 section {
   width: calc(100% - 310px);
+<<<<<<< HEAD
   padding: 1em;
   display: table-cell;
   vertical-align: middle;
+=======
+  padding: 10em 2em;
+>>>>>>> 55a6716eb0a192d088c01ecc5a8fc01b6be4146c
 }
 
 div.card {
   background-color: #eaac8b;
+<<<<<<< HEAD
   padding: 2em;
   margin-bottom: 1em;
   display: inline-block;
   width: calc(50% - 1em);
+=======
+  padding: 1em 0;
+  text-align: center;
+  display: inline-block;
+  width: calc(100% - 50%);
+  border: 2px solid white;
+}
+
+div.card:nth-child(-n + 2) {
+  margin-bottom: 0.5em;
+>>>>>>> 55a6716eb0a192d088c01ecc5a8fc01b6be4146c
 }

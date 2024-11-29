@@ -8,7 +8,14 @@
 </head>
 <body>
   <header>
-    <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+    <div id="inicio">
+      <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+      <h1>OKC Thunder SPAIN</h1>
+      <div id="search">
+        <input type="search" name="search" placeholder="Buscar..." autocomplete="off">
+        <button type="search" alt="search"><img src="./img/search.png" alt="search"></button>
+      </div>
+    </div>
     <img id="btn-menu" src="./img/icon-menu-button.svg" alt="menu">
 
     <nav id="nav-header">
@@ -21,10 +28,13 @@
           <a href="./index.html">Inicio</a>
         </li>
         <li>
-          <a href="./views/standings">Clasificaciones</a>
+          <a href="./views/standings.html">Clasificaciones</a>
         </li>
         <li>
-          <a href="./views/calendar">Calendario</a>
+          <a href="./views/stats.html">Estadísticas</a>
+        </li>
+        <li>
+          <a href="./views/calendar.html">Calendario</a>
         </li>
         <li>
           <a href="./views/history.html">Historia del equipo</a>
@@ -41,6 +51,8 @@
 
   <main>
     <section id="destacados1">
+      <!--Botón para slider (tablet) que no sé cómo aplicar-->
+      <!-- <button class="slider" type="button" alt="izquierda"><img src="./img/izquierda.png" alt="izquierda"></button> -->
       <article>
         <img src="./img/players/chet-holmgren-1.png" alt="chet-holmgren">
         <h2>Chet, fuera 8-10 semanas</h2>
@@ -62,91 +74,113 @@
           Josep Falagán
         </p>
       </article>
+       <!--Botón para slider (tablet) que no sé cómo aplicar-->
+      <!-- <button class="slider" type="button" alt="derecha"><img src="./img/derecha.png" alt="derecha"></button> -->
     </section>
 
-    <section id="destacados2">
-      <article>
-        <img src="./img/players/jalen-williams.jpg" alt="jalen-williams">
-        <h2>
-          Jalen Williams, sobre jugar sin pívot: "No es excusa"
-        </h2>
-      </article>
-  
-      <article>
-        <img src="./img/players/mark-daigneault.jpeg" alt="mark-daigneault">
-        <h2>
-          Daigneault acota el problema de los tiros libres
-        </h2>
-      </article>
-    </section>
+    <!--Creo este div con esta clase para poder mover mejor los elementos cuando salga de la versión móvil-->
+    <div class="tablet-pc">
+      <section id="destacados2">
+        <article>
+          <img src="./img/players/jalen-williams.jpg" alt="jalen-williams">
+          <h2>
+            J. Williams, sobre jugar sin pívot: "No es excusa"
+          </h2>
+        </article>
+    
+        <article>
+          <img src="./img/players/mark-daigneault.jpg" alt="mark-daigneault">
+          <h2>
+            Daigneault acota el problema de las faltas
+          </h2>
+        </article>
+      </section>
 
-    <section id="partido">
-      <table>
-        <thead>
-          <tr>
-            <th>Equipos</th>
-            <th>1Q</th>
-            <th>2Q</th>
-            <th>3Q</th>
-            <th>4Q</th>
-            <th>FINAL</th>
-          </tr>
-        </thead>
+      <section id="extra-web">
+        <article>
+          <img src="./img/players/nba-cup-okc-court.png" alt="cup-court">
+          <h2>
+            Así luce la nueva cancha para la Copa NBA
+          </h2>
+        </article>
 
-        <tbody>
-          <tr>
-            <td>
-              <img src="./img/Team-logos/logo OKC.png" alt="OKC">
-            </td>
-            <td>21</td>
-            <td>26</td>
-            <td>23</td>
-            <td>39</td>
-            <td class="resultado-final">109</td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./img/Team-logos/portland-trail-blazers.png" alt="POR">
-            </td>
-            <td>23</td>
-            <td>21</td>
-            <td>25</td>
-            <td>30</td>
-            <td class="resultado-final">99</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div id="stats">
+        <article>
+          <img src="./img/players/thaksgiving-okc.jpg" alt="thaksgiving-okc">
+          <h2>
+            Día de Acción de Gracias con OKC
+          </h2>
+        </article>
+      </section>
+      
+      <!--Para marcador y jugadores destacados he empleado tablas-->
+      <section id="partido">
         <table>
+          <thead>
+            <tr>
+              <th>Equipos</th>
+              <th>1Q</th>
+              <th>2Q</th>
+              <th>3Q</th>
+              <th>4Q</th>
+              <th>FINAL</th>
+            </tr>
+          </thead>
+  
           <tbody>
             <tr>
-              <td>J. Williams</td>
-              <td>I. Hartenstein</td>
-              <td>J. Williams</td>
+              <td>
+                <img src="./img/Team-logos/logo OKC.png" alt="OKC">
+              </td>
+              <td>21</td>
+              <td>26</td>
+              <td>23</td>
+              <td>39</td>
+              <td class="resultado-final">109</td>
             </tr>
             <tr>
               <td>
-                <img src="./img/stats/jalen-williams-stats.png" alt="jalen-williams-stats">
+                <img src="./img/Team-logos/portland-trail-blazers.png" alt="POR">
               </td>
-              <td>
-                <img src="./img/stats/isaiah-hartenstein-stats.png" alt="isaiah-hartenstein-stats">
-              </td>
-              <td>
-                <img src="./img/stats/jalen-williams-stats.png" alt="jalen-williams-stats">
-              </td>
-            </tr>
-
-            <tr>
-              <td>30 PTS</td>
-              <td>14 REBS</td>
-              <td>8 ASTS</td>
+              <td>23</td>
+              <td>21</td>
+              <td>25</td>
+              <td>30</td>
+              <td class="resultado-final">99</td>
             </tr>
           </tbody>
         </table>
-        <a href="https://www.nba.com/game/por-vs-okc-0022400256?watchRecap=true" target="_blank"><button>VER RESUMEN</button></a>
-      </div>
-    </section>
+  
+        <div id="stats">
+          <table>
+            <tbody>
+              <tr>
+                <td>J. Williams</td>
+                <td>I. Hartenstein</td>
+                <td>J. Williams</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.nba.com/player/1631114/jalen-williams" target="_blank"><img src="./img/stats/jalen-williams-stats.png" alt="jalen-williams-stats"></a>
+                </td>
+                <td>
+                  <a href="https://www.nba.com/player/1628392/isaiah-hartenstein" target="_blank"><img src="./img/stats/isaiah-hartenstein-stats.png" alt="isaiah-hartenstein-stats"></a>
+                </td>
+                <td>
+                  <a href="https://www.nba.com/player/1631114/jalen-williams" target="_blank"><img src="./img/stats/jalen-williams-stats.png" alt="jalen-williams-stats"></a>
+                </td>
+              </tr>
+  
+              <tr>
+                <td>30 PTS</td>
+                <td>14 REBS</td>
+                <td>8 ASTS</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="https://www.nba.com/game/por-vs-okc-0022400256?watchRecap=true" target="_blank"><button>VER RESUMEN</button></a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>

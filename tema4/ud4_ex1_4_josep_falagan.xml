@@ -1,0 +1,85 @@
+<!-- DOCUMENTO 1 ORIGINAL-->
+<?xml version="1.0"?>
+<documento>
+  <p>Mi Primer <destacar importancia=1>documento
+  XML</destacar></p]
+  <p>Comienza con la etiqueta <documento&gt;</p>
+  <p>A continuacion colocamos un elemento sin
+  contenido</p>
+  <imagen fichero="imagen.gif">
+</documento>
+
+<!--DOCUMENTO 1 CORREGIDO-->
+<?xml version="1.0" encoding="UTF-8"?><!--Añadir encoding-->
+<documento>
+  <!--Entrecomillar contenido de "importancia" i cerrar "p"-->
+  <p>Mi Primer <destacar importancia="1">documentoXML</destacar></p>
+  <!--Añadir "&lt;"-->
+  <p>Comienza con la etiqueta &lt;documento&gt;</p>
+  <p>A continuacion colocamos un elemento sin contenido</p>
+  <!--Cerrar etiqueta con "/"-->
+  <imagen fichero="imagen.gif"/>
+</documento>
+
+
+<!--DOCUMENTO 2 ORIGINAL-->
+<?xml version="1.0"?>
+<libros>
+    <libro id="quijote">
+    <titulo>El Quijote</titulo>
+    <autor nombre=cervantes nombre=cervantes>
+    <descripcion>Es el m<ejor libro de
+    cervantes.</descripcion>
+  </libro]
+</Libros>
+
+<!--DOCUMENTO 2 CORREGIDO-->
+<?xml version="1.0" encoding="UTF-8"?> <!--Añadir encoding-->
+<libros>
+  <libro id="quijote">
+    <titulo>El Quijote</titulo>
+    <!--Repetición de "nombre" y falta cerrar-->
+    <autor nombre="cervantes"/>
+    <!--Error en el texto que impide cerrar correctamente-->
+    <descripcion>
+      Es el mejor libro de cervantes.
+    </descripcion>
+  <!--Etiqueta mal cerrada-->
+  </libro>
+<!--Falta coincidencia entre apertura y cierre por la mayúscula-->
+</libros>
+
+
+<!-- DOCUMENTO 3 ORIGINAL-->
+<?Xml version="1,0" encoding="UTF-8"?>
+<triangulo base="7"altura="5">
+<triangulo base="2"altura="6">
+<triangulo base="3"altura="3">
+
+<!--DOCUMENTO 3 CORREGIDO-->
+<?xml version="1.0" encoding="UTF-8"?> <!--"xml" en minúscula y "1.0" con "." y no con ","-->
+<!-- Crear atributo padre para englobar todos los triángulos-->
+<triangulos>
+  <!-- Falta cerrar todos los triángulos y un espacio entre valor de base y "altura"-->
+  <triangulo base="7" altura="5"/>
+  <triangulo base="2" altura="6"/>
+  <triangulo base="3" altura="3"/>
+</triangulos>
+
+
+<!-- DOCUMENTO 4 ORIGINAL-->
+<?xml version="1.0" encoding="UTF-8"?>
+<numeros>
+  <1 letra="u" letra="n" letra="o">1</>
+  <2 letra="d" letra="o" letra="s">22</>
+  <6 letra="s" letra="e" letra="i" letra="s">666666</>
+</numeros>
+
+<!--DOCUMENTO 4 CORREGIDO-->
+<?xml version="1.0" encoding="UTF-8"?>
+<numeros>
+  <!--Etiquetas no pueden empezar con números, falta de distinción en "letra" y etiquetas mal cerradas-->
+  <num letra1="u" letra2="n" letra3="o">1</num>
+  <num letra1="d" letra2="o" letra3="s">22</num>
+  <num letra1="s" letra2="e" letra3="i" letra4="s">666666</num>
+</numeros>

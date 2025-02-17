@@ -96,7 +96,7 @@ aside nav {
 
 .products-container div {
   text-align: center;
-  height: 220px;
+  /* height: 220px; */
 }
 
 .menu-item {
@@ -124,7 +124,7 @@ aside nav {
     display: flex;
   }
 
-  .fa-bars {
+  .nav-logo div:first-child {
     display: none;
   }
 
